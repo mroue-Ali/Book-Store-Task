@@ -1,0 +1,57 @@
+<div class="book-details-container">
+  <div class="book-image-container">
+  <img  src="../../assets/book.jpg" height="278"width="181"/>
+  </div>
+  <div class="book-details">
+    <h2>{{book?.title}}</h2>
+    <p>Author: {{book?.author}}</p>
+    <p>Description: {{book?.description}}</p>
+    <p>Price: {{book?.price}}  $</p>
+    <button (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>
+<style>
+
+  .book-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  book-image-container {
+    margin-right: 20px;
+
+  }
+
+  .book-image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10%;
+    border: 1px solid #ccc;
+  }
+
+
+  .book-details {
+    padding: 2rem;
+    flex-grow: 1;
+  }
+
+  .book-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .book-details p {
+    margin-bottom: 0.5rem;
+  }
+
+  .book-details button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+</style>

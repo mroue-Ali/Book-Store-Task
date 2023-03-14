@@ -1,0 +1,57 @@
+
+<h1> Books List</h1>
+<table class="book-list">
+  <tr>
+    <th>title</th>
+    <th>author</th>
+    <th>price</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let book of books">
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.price}}</td>
+    <td><button [routerLink]="['/book', book.id]">Details</button></td>
+  </tr>
+</table>
+<style>
+
+  .book-list {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .book-list th,
+  .book-list td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .book-list th {
+    background-color: #efefef;
+  }
+
+  .book-list td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .book-list td:last-child {
+    text-align: center;
+  }
+
+  .book-list button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>

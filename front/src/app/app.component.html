@@ -1,0 +1,38 @@
+
+<nav>
+  <a routerLink=""><h1>Book Store</h1></a>
+  <div class="links">
+    <a routerLink="list">All Books</a>
+    <a routerLink="cart">Your Cart</a>
+    <a routerLink="orders">Your Orders</a>
+  </div>
+</nav>
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  nav h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .links a:hover {
+    color: #ddd;
+  }
+</style>
+<router-outlet></router-outlet>
+
+
