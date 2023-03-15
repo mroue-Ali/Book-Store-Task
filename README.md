@@ -8,7 +8,6 @@ This is a simple book store website done with ExpressJs and Angular
     3-Start the server by running npm start or npm start:dev (watch).
     and you need to create a database in mysql called "bookstore" and the following tables : users,books,orders,order-items. or just run the following sql statement :
    
-   
    ```
              CREATE TABLE users (
             id INT PRIMARY KEY AUTO_INCREMENT,
